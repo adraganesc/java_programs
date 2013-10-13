@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
@@ -81,7 +80,7 @@ public class SingleLink {
         double min = Double.MIN_VALUE;
 
         for (int i = 0; i < cls.length; i++) {
-            for (int j = 0; j < i; j++) {//cu <= atingea zerourile
+            for (int j = 0; j < i; j++) {//with <= the loop would have touched the zeros
                 double v = cls[i].getDisimilarity(cls[j]);
                 d[i][j] = v;
                 if (min >= v) {
