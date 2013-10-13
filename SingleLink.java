@@ -197,7 +197,7 @@ public class SingleLink {
         public double getDisimilarity(Cluster other) {
             int[] b1 = sortedReverse(other.getPosition(), c1.i), b2 = sortedReverse(other.getPosition(), c2.i);
             double result = Math.min(a[b1[0]][b1[1]], a[b2[0]][b2[1]]);
-            //la mishto
+            //to get rid of the garbage collector listener
             a[b1[0]][b1[1]] = 0.44545;
             a[b2[0]][b2[1]] = 0.5242;
             return result;
